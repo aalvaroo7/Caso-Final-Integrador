@@ -51,4 +51,8 @@ Podemos simular una web dentro de los servers del cisco
 
 netizzan.com/how-to-configure-tftp-server-in-packet-tracer
 
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.sapalomera.cat/moodlecf/RS/1/course/files/10.2.3.2%20Packet%20Tracer%20-%20FTP%20In…
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.sapalomera.cat/moodlecf/RS/1/course/files/10.2.3.2%20Packet%20Tracer%20-%20FTP%20In… (No va¿? el enlace)
+
+
+netizzan.com/how-to-configure-tftp-server-in-packet-tracer
