@@ -3,13 +3,13 @@ https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
 ## COMO CONFIGURAR LOS SERVIDORES DE FTP DE UN SERVIDOR 
 
-netizzan.com/how-to-configure-tftp-server-in-packet-tracer
+https://netizzan.com/how-to-configure-tftp-server-in-packet-tracer
 
-netizzan.com/how-to-configure-tftp-server-in-packet-tracer
+https://netizzan.com/how-to-configure-tftp-server-in-packet-tracer
 
-mediateca.educa.madrid.org/video/qqz61biyuiak3w68
+https://mediateca.educa.madrid.org/video/qqz61biyuiak3w68
 
-informatica.uv.es/~carlos/docencia/netinvm/es/netinvm-intro/netinvm-intro.html
+https://informatica.uv.es/~carlos/docencia/netinvm/es/netinvm-intro/netinvm-intro.html
 
 
 Para lo de informatica de uv tenemos que hacer hasta la parte 18
