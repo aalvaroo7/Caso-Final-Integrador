@@ -57,6 +57,8 @@ mediateca.educa.madrid.org/video/qqz61biyuiak3w68
 
 informatica.uv.es/~carlos/docencia/netinvm/es/netinvm-intro/netinvm-intro.html
 
+https://informatica.uv.es/~carlos/docencia/netinvm/es/netinvm-intro/netinvm-intro.html
+
 ### Opcional 
 
 link.springer.com/article/10.1007/s10586-024-04291-z
