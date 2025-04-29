@@ -57,6 +57,9 @@ mediateca.educa.madrid.org/video/qqz61biyuiak3w68
 
 informatica.uv.es/~carlos/docencia/netinvm/es/netinvm-intro/netinvm-intro.html
 
+
+Para lo de informatica de uv tenemos que hacer hasta la parte 18
+
 https://informatica.uv.es/~carlos/docencia/netinvm/es/netinvm-intro/netinvm-intro.html
 
 ### Opcional 
