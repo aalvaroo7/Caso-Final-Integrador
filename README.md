@@ -47,6 +47,6 @@ Podemos simular una web dentro de los servers del cisco
 
 
 
-## COMO CONFIGURAR LOS SERVIDORES DE FTP
+## COMO CONFIGURAR LOS SERVIDORES DE FTP DE UN SERVIDOR 
 netizzan.com/how-to-configure-tftp-server-in-packet-tracer
 
