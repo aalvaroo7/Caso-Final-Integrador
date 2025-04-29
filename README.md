@@ -45,7 +45,7 @@ Construir una red integral(con el ayto en el centro)
 
 Podemos simular una web dentro de los servers del cisco
 
-
+Para el fftp hay que user xamp para montar al cliente como base de datos
 
 ## COMO CONFIGURAR LOS SERVIDORES DE FTP DE UN SERVIDOR 
 
