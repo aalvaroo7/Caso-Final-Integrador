@@ -46,3 +46,7 @@ Construir una red integral(con el ayto en el centro)
 Podemos simular una web dentro de los servers del cisco
 
 
+
+## COMO CONFIGURAR LOS SERVIDORES DE FTP
+netizzan.com/how-to-configure-tftp-server-in-packet-tracer
+
