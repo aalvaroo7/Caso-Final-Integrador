@@ -58,4 +58,9 @@ chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.sapalomera.cat/m
 netizzan.com/how-to-configure-tftp-server-in-packet-tracer
 
 
+### Opcional 
+
+link.springer.com/article/10.1007/s10586-024-04291-z
+
+
 tuto-mundo.blogspot.com/2012/11/configuracion-de-servidor-http-dhcp.html
