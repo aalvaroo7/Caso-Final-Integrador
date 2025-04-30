@@ -1,6 +1,15 @@
 # Caso-Final-Integrador
 https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
+## Links a videos interesantes sobre tunelado, vpn e ipsec
+
+https://www.youtube.com/watch?v=CsAROSbZF-Y&list=PLvUOx2WG6R7N5mUWwB-_YLWEkk491XqKx&index=62&t=315s <--- Montado de una vpn con ipsec(encriptación)
+
+https://www.youtube.com/watch?v=OQVKp6VLyls&t=127s <--- Tunnelado de ipv6 SOBRE ipv4
+
+https://www.youtube.com/watch?v=hY1sXBt-CQY&list=PLvUOx2WG6R7N5mUWwB-_YLWEkk491XqKx <-- Enlace curso completo del CCNA
+
+
 ## COMO CONFIGURAR LOS SERVIDORES DE FTP DE UN SERVIDOR 
 
 https://netizzan.com/how-to-configure-tftp-server-in-packet-tracer
