@@ -1,5 +1,6 @@
 # Tunel básico
 
+## LINK AL VÍDEO DE TUNEL BÁSICO FORMADO POR ROUTERS https://www.youtube.com/watch?v=OQVKp6VLyls
 En esta rama se propone una topología básica para manejar el uso de tuneles de ipv6 sobre ipv4
 
 Hemos propuesto este tipo de tunel(ipv6 sobre ipv4) porque es el más usado actualmente
