@@ -1,24 +1,16 @@
-# Caso-Final-Integrador
-https://github.com/aalvaroo7/Caso-Final-Integrador.git
+# Tunel básico
 
-## COMO CONFIGURAR LOS SERVIDORES DE FTP DE UN SERVIDOR 
+En esta rama se propone una topología básica para manejar el uso de tuneles de ipv6 sobre ipv4
 
-https://netizzan.com/how-to-configure-tftp-server-in-packet-tracer
+Hemos propuesto este tipo de tunel(ipv6 sobre ipv4) porque es el más usado actualmente
+debido a que muchas redes aún siguen teniendo algunos elementos ipv4 y no todo en ipv6 
+para asemejar este caso práctico con la realidad es una muy buena opción.
 
-https://netizzan.com/how-to-configure-tftp-server-in-packet-tracer
+**A continuación se muestra una tabla de comparación entre los dos tipos de tuneles posibles**
 
-https://mediateca.educa.madrid.org/video/qqz61biyuiak3w68
-
-https://informatica.uv.es/~carlos/docencia/netinvm/es/netinvm-intro/netinvm-intro.html
-
-
-Para lo de informatica de uv tenemos que hacer hasta la parte 18
-
-https://informatica.uv.es/~carlos/docencia/netinvm/es/netinvm-intro/netinvm-intro.html
-
-### Opcional 
-
-https://link.springer.com/article/10.1007/s10586-024-04291-z
-
-
-https://tuto-mundo.blogspot.com/2012/11/configuracion-de-servidor-http-dhcp.html
+| Criterio                     | IPv6 sobre IPv4 | IPv4 sobre IPv6 |
+|-----------------------------|------------------|------------------|
+| Compatibilidad actual       |  Alta            |  Baja (limitada) |
+| Transición hacia IPv6       |  Ideal           |  Poco útil en la práctica actual |
+| Uso futuro (IPv6-only)      |   Menor          |   Mayor         |
+| Soporte en routers/switches |   Amplio         |  Limitado      |
