@@ -1,6 +1,12 @@
 # Caso-Final-Integrador
 https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
+
+# Topología a usar
+
+![image](https://github.com/user-attachments/assets/d4c5604e-1b7f-4a5b-aaa5-d6d849f2bd62)
+
+
 ## Links a videos interesantes sobre tunelado, vpn e ipsec
 
 https://www.youtube.com/watch?v=CsAROSbZF-Y&list=PLvUOx2WG6R7N5mUWwB-_YLWEkk491XqKx&index=62&t=315s <--- Montado de una vpn con ipsec(encriptación)
