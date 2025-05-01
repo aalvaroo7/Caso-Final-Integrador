@@ -42,3 +42,65 @@ Enrutador principal con políticas de seguridad (ACL, NAT si aplica).
 Conexiones troncales con cada sede usando GRE/IPsec sobre IPv4.
 
 Las demás sedes funcionarán como sucursales LAN conectadas al core central.
+
+
+# 🛠️ Dispositivos Necesarios en Cisco Packet Tracer
+
+## 🏛️ Sede Central (Hub + Núcleo de red)
+
+| Dispositivo                     | Cantidad | Función                                           |
+|--------------------------------|----------|---------------------------------------------------|
+| Router ISR4321 o 2901          | 1        | Núcleo de red, VPN/IPSec, OSPF, NAT/ACL          |
+| Switch Multicapa (2960 o 3650) | 1–2      | VLANs por servicio, trunk hacia router           |
+| PCs o Laptops                  | 5+       | Estaciones administrativas                       |
+| Servidores                     | 3–4      | DNS, DHCP, Web, AAA, Streaming                   |
+| Firewall (ACL en router)       | -        | Protección de red y DMZ                          |
+| Cloud                          | 1        | Simular Internet/transporte IP                   |
+
+---
+
+## 🚨 Sede de Seguridad Pública
+
+| Dispositivo              | Cantidad | Función                                               |
+|-------------------------|----------|--------------------------------------------------------|
+| Router ISR 2901 o 2811  | 1        | VPN cliente, ruteo local, OSPF                         |
+| Switch (2960)           | 1        | VLANs para cámaras, VoIP, PCs                          |
+| Cámaras IP              | 2–4      | Vigilancia                                             |
+| PCs o Laptops           | 3–4      | Gestión de emergencias                                |
+| IP Phones (CP-7960)     | 2–3      | Comunicaciones VoIP                                   |
+| Servidor de VoIP        | 1 (opt.) | CME en el router o servidor externo                   |
+
+---
+
+## 🚦 Sede de Infraestructura (IoT y sensores)
+
+| Dispositivo              | Cantidad | Función                                    |
+|-------------------------|----------|--------------------------------------------|
+| Router ISR 2901 o 2811  | 1        | VPN, OSPF, acceso a sensores               |
+| Switch (2960)           | 1        | VLANs por tipo de sensor                   |
+| PCs o Laptops           | 2–3      | Gestión de movilidad y SCADA               |
+| IoT Devices             | 4–6      | Sensores de humedad, aire, temperatura     |
+| Generic Actuators       | 1–2      | Semáforos inteligentes (simulados)         |
+
+---
+
+## 📺 Sede Ciudadana y Multimedia
+
+| Dispositivo                     | Cantidad | Función                                       |
+|--------------------------------|----------|-----------------------------------------------|
+| Router ISR 2901 o 2811         | 1        | VPN cliente, OSPF, DMZ                        |
+| Switch (2960)                  | 1–2      | VLANs para WiFi, streaming, PCs               |
+| PCs o Laptops                  | 4–6      | Kioskos digitales, terminales ciudadanas      |
+| Servidor Web / Streaming       | 1–2      | Servicios web y multimedia                    |
+| Access Point (Linksys / Gen.)  | 1–2      | Red WiFi para usuarios                        |
+| Firewall (ACL en router)       | -        | Separación red pública/privada                |
+
+---
+
+## 🔌 Conectividad Global
+
+| Elemento                        | Cantidad      | Función                                          |
+|--------------------------------|---------------|--------------------------------------------------|
+| Cables (cobre, fibra, consola) | Según diseño  | Conexiones entre dispositivos                    |
+| Túneles GRE/IPsec (config)     | 3             | Entre cada sede remota y la central              |
+| Direcciones IP/VLAN            | Según sede    | Plan de direccionamiento estructurado            |
