@@ -20,7 +20,7 @@ Hemos planteado ofrecer una red para cada servicio dividiendo así la red en la 
 
 ##  Para cumplir con todo esto hemos planteado dividir la red en varias sedes con varias subredes, en total se ha planteado 4 sedes
 
-![Sedes - visual selection (1)](https://github.com/user-attachments/assets/7ebe393b-baaf-4c08-b2ad-b4a7d55ae793)
+![image](https://github.com/user-attachments/assets/497471af-d17f-4cfd-9bbb-e4a6879521ed)
 
 | **Sede**        | **Función Principal**                                              | **Servicios albergados**                                                                                                                                                          |
 |------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
