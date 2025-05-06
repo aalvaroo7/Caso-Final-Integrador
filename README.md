@@ -66,3 +66,9 @@ ping desde PC2 a PC4
 show ip route en ambos routers para ver que aprendieron rutas con EIGRP
 
 show ip protocols para confirmar EIGRP activo
+
+# Enlaces útiles
+
+https://www.cisco.com/en/US/docs/ios/lanswitch/configuration/guide/lsw_cfg_vlan_encap.html?utm_source=chatgpt.com
+
+https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_eigrp/configuration/15-mt/ire-15-mt-book/ire-enhanced-igrp.html?utm_source=chatgpt.com
