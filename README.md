@@ -104,3 +104,23 @@ Las demás sedes funcionarán como sucursales LAN conectadas al core central.
 | Cables (cobre, fibra, consola) | Según diseño  | Conexiones entre dispositivos                    |
 | Túneles GRE/IPsec (config)     | 3             | Entre cada sede remota y la central              |
 | Direcciones IP/VLAN            | Según sede    | Plan de direccionamiento estructurado            |
+
+
+## Tipos de enrutamiento dinámico
+
+| **Protocolo** | **Tipo**                                            | **Uso principal**                                                     | **Ventajas**                                                     | **Desventajas**                                                          |
+| ------------- | --------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **RIP v2**    | Vector de distancia                                 | Redes pequeñas con poca complejidad                                   | Fácil de configurar, admite VLSM (en v2)                         | Lento en converger, límite de 15 saltos                                  |
+| **EIGRP**     | Vector de distancia avanzado (propietario de Cisco) | Redes medianas a grandes dentro de entornos Cisco                     | Rápida convergencia, eficiente, admite VLSM, métricas compuestas | Solo funciona en equipos Cisco (aunque hay una versión limitada abierta) |
+| **OSPF**      | Estado de enlace                                    | Redes medianas a grandes, interoperables entre diferentes fabricantes | Convergencia rápida, escalabilidad, admite múltiples áreas, VLSM | Más complejo de configurar que RIP/EIGRP                                 |
+| **BGP**       | Vector de ruta (Path vector)                        | Interconexión entre organizaciones o ISPs (Internet)                  | Escalable globalmente, controla rutas entre AS                   | Muy complejo, requiere mucho conocimiento técnico                        |
+
+## Tipos de enrutamiento según la función que desarrollan en cisco paquet tracer
+
+| **Protocolo** | **Tipo**                             | **Uso dentro de Cisco Packet Tracer**                                             | **Ventajas en Packet Tracer**                                                  | **Limitaciones dentro del simulador**                                             |
+| ------------- | ------------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| **RIP v2**    | Vector de distancia                  | Ideal para practicar conceptos básicos de enrutamiento dinámico                   | Fácil de configurar, útil para aprender subnetting y saltos                    | No soporta rutas más allá de 15 saltos, convergencia lenta                        |
+| **EIGRP**     | Vector de distancia avanzado (Cisco) | Muy útil para prácticas con múltiples redes, métrica compuesta, resumen de rutas  | Admite VLSM, rápida convergencia, buenas métricas, ideal para topologías Cisco | Solo funciona entre routers Cisco, configuración más extensa que RIP              |
+| **OSPF**      | Estado de enlace                     | Muy útil para redes jerárquicas (multiárea), interoperabilidad entre dispositivos | Potente en topologías grandes, buen soporte en Packet Tracer                   | Configuración más detallada (áreas, ID de router, máscaras wildcard)              |
+| **BGP**       | Vector de ruta (Path vector)         | *No soportado* en Cisco Packet Tracer                                             | N/A                                                                            | **No disponible** en Packet Tracer, solo en simuladores más avanzados (GNS3, CML) |
+
