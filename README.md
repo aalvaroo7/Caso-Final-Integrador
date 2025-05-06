@@ -124,3 +124,12 @@ Las demás sedes funcionarán como sucursales LAN conectadas al core central.
 | **OSPF**      | Estado de enlace                     | Muy útil para redes jerárquicas (multiárea), interoperabilidad entre dispositivos | Potente en topologías grandes, buen soporte en Packet Tracer                   | Configuración más detallada (áreas, ID de router, máscaras wildcard)              |
 | **BGP**       | Vector de ruta (Path vector)         | *No soportado* en Cisco Packet Tracer                                             | N/A                                                                            | **No disponible** en Packet Tracer, solo en simuladores más avanzados (GNS3, CML) |
 
+Para la topología empleada usaremos el protocolo de enrutamiento dinámico EIGRP, debido a los siguientes motivos:
+
+Excelente para topologías tipo hub-and-spoke , como en la topología propuesta en la cual la central es el hub 
+
+Soporta resumen de rutas en la sede central por lo tanto aporta escalabilidad
+
+Tiene rápida convergencia y es más estable que RIP.
+
+Es fácil de configurar comparado con OSPF 
