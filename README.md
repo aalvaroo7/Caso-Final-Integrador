@@ -50,7 +50,7 @@ Configuración de los Switches
 | ---------------------------- | ------------------------------------------------- |
 | `interface range fa0/1 - 24` | Configuración del rango de puertos de acceso      |
 | `switchport mode access`     | Configuración de puertos como puertos de acceso   |
-| `switchport access vlan 10`  | Asignación de los puertos a la VLAN 10            |
+| `switchport access vlan n !La que sea`  | Asignación de los puertos a la VLAN 10            |
 | `spanning-tree portfast`     | Activación de PortFast para evitar retardo de STP |
 | `interface fa0/x`            | Configuración del puerto troncal hacia el router  |
 | `switchport mode trunk`      | Configuración de puerto como troncal              |
