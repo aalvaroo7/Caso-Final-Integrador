@@ -133,3 +133,14 @@ Soporta resumen de rutas en la sede central por lo tanto aporta escalabilidad
 Tiene rápida convergencia y es más estable que RIP.
 
 Es fácil de configurar comparado con OSPF 
+
+# Tipos de ip y sus usos
+
+| **Clase de IP** | **Rango de direcciones**    | **Máscara de subred por defecto** | **Rango de direcciones utilizables** | **Número de direcciones** | **Uso típico**                                         | **Impacto en la conexión**                                                                                                                                               |
+| --------------- | --------------------------- | --------------------------------- | ------------------------------------ | ------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Clase A**     | 0.0.0.0 - 127.255.255.255   | 255.0.0.0                         | 1.0.0.1 - 127.255.255.254            | 16,777,216                | Redes grandes (ISPs, grandes empresas)                 | Permite redes muy grandes y la expansión sin problemas. Puede ser difícil de gestionar debido al alto número de direcciones y la necesidad de segmentar subredes.        |
+| **Clase B**     | 128.0.0.0 - 191.255.255.255 | 255.255.0.0                       | 128.0.0.1 - 191.255.255.254          | 65,536                    | Redes medianas (universidades, empresas grandes)       | Ideal para redes de tamaño medio. Requiere una gestión eficiente, pero ofrece un buen balance entre direcciones disponibles y facilidad de gestión.                      |
+| **Clase C**     | 192.0.0.0 - 223.255.255.255 | 255.255.255.0                     | 192.0.0.1 - 223.255.255.254          | 256                       | Redes pequeñas (hogares, pequeñas empresas)            | Adecuado para redes pequeñas. La cantidad limitada de direcciones hace que sea fácil de gestionar, pero puede ser un problema si se necesita más espacio de direcciones. |
+| **Clase D**     | 224.0.0.0 - 239.255.255.255 | No aplica                         | Direcciones para multidifusión       | No tiene límite definido  | Multidifusión (transmisiones a múltiples dispositivos) | Utilizada para aplicaciones de difusión de datos a varios dispositivos a la vez (multicast). No se utiliza para redes estándar.                                          |
+| **Clase E**     | 240.0.0.0 - 255.255.255.255 | No aplica                         | Reservado para uso experimental      | No tiene límite definido  | Uso experimental                                       | Reservada para usos experimentales y futuros, no se utiliza en redes públicas.                                                                                           |
+
