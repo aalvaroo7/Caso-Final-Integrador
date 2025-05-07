@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=OQVKp6VLyls&t=127s <--- Tunnelado de ipv6 SOBRE 
 
 https://www.youtube.com/watch?v=hY1sXBt-CQY&list=PLvUOx2WG6R7N5mUWwB-_YLWEkk491XqKx <-- Enlace curso completo del CCNA
 
-https://www.youtube.com/watch?v=CUhgSuNVul0
+https://www.youtube.com/watch?v=CUhgSuNVul0 <-- ESTE ES EL NUEVO
 
 https://www.youtube.com/watch?v=2SjhoEW0QJ4
 
