@@ -12,6 +12,8 @@ https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
 --> VPN + ACLS + IPSEC
 
+--> Modificar la web (si se puede)
+
 ## Links a videos interesantes sobre tunelado, vpn e ipsec
 
 https://www.youtube.com/watch?v=CsAROSbZF-Y&list=PLvUOx2WG6R7N5mUWwB-_YLWEkk491XqKx&index=62&t=315s <--- Montado de una vpn con ipsec(encriptación)
