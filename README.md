@@ -10,7 +10,7 @@ https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
 --> Dispositivos IOT con su debido server 
 
---> VPN + ACLS
+--> VPN + ACLS + IPSEC
 
 ## Links a videos interesantes sobre tunelado, vpn e ipsec
 
