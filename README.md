@@ -4,8 +4,13 @@ https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
 # Topología a usar
 
-![image](https://github.com/user-attachments/assets/d4c5604e-1b7f-4a5b-aaa5-d6d849f2bd62)
+![image](https://github.com/user-attachments/assets/ae5fb8db-748f-4a03-93ef-f8a71eaef8a9)
 
+# A implementar 
+
+--> Dispositivos IOT con su debido server 
+
+--> VPN + ACLS
 
 ## Links a videos interesantes sobre tunelado, vpn e ipsec
 
@@ -20,8 +25,6 @@ https://www.youtube.com/watch?v=2SjhoEW0QJ4
 
 
 ## COMO CONFIGURAR LOS SERVIDORES DE FTP DE UN SERVIDOR 
-
-https://netizzan.com/how-to-configure-tftp-server-in-packet-tracer
 
 https://netizzan.com/how-to-configure-tftp-server-in-packet-tracer
 
