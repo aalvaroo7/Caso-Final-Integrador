@@ -16,5 +16,19 @@ En esta imagen se visualiza la correcta descarga del archivo Texto.txt desde otr
 
 ![image](https://github.com/user-attachments/assets/5dbdd836-0c88-4dac-9b13-64b7bad1e010)
 
+
+# Demostración servicio tfpt
+
+para hacer uso de este servicio introduciremos los siguientes comandos en un router para copiar la configuración de este y transferirla al server
+
+```
+Copy running-config tftp:
+Address or name of remote host []? 192.168.1.2
+Destination filename [netizzan-confg]? 
+Writing running-config....!!
+[OK - 718 bytes]
+718 bytes copied in 3.252 secs (220 bytes/sec)
+```
+
 En esta imagen se ve como el server ha sido capaz de obtener la configuración desde un router 
 ![image](https://github.com/user-attachments/assets/ca253d38-ea88-4290-9f27-56ea3ac18ac8)
