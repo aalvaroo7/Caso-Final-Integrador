@@ -10,7 +10,7 @@ https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
 --> Dispositivos IOT con su debido server 
 
---> VPN + ACLS + IPSEC
+--> VPN + ACLS + IPSEC <-- Todo en uno 
 
 --> Modificar la web (si se puede)
 
