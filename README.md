@@ -16,3 +16,5 @@ En esta imagen se visualiza la correcta descarga del archivo Texto.txt desde otr
 
 ![image](https://github.com/user-attachments/assets/5dbdd836-0c88-4dac-9b13-64b7bad1e010)
 
+En esta imagen se ve como el server ha sido capaz de obtener la configuración desde un router 
+![image](https://github.com/user-attachments/assets/ca253d38-ea88-4290-9f27-56ea3ac18ac8)
