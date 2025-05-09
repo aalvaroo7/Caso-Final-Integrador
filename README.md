@@ -25,10 +25,10 @@ Hemos planteado ofrecer una red para cada servicio dividiendo así la red en la 
 
 | **Sede**                         | **Servicios Principales Asignados**                                                                                     | **Características Técnicas Clave**                                                                 |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| 🏛️ **Sede Central**              | - Comunicación interorganismos<br>- DNS, NTP, AAA<br>- Administración interna<br>- Control de políticas de red          | - Core de ruteo (OSPF)<br>- Firewall perimetral<br>- VPN Gateway/IPSec<br>- ACLs y NAT              |
-| 🚨 **Sede de Seguridad**         | - Cámaras de videovigilancia<br>- Comunicaciones de emergencia<br>- Salud y Protección Civil                            | - QoS para voz/video<br>- Alta disponibilidad<br>- Red inalámbrica segura<br>- Segmentación IoT     |
-| 🚦 **Sede de Infraestructura**   | - Semáforos inteligentes<br>- Sensores ambientales (aire, humedad, ruido)<br>- Movilidad urbana                          | - VLANs por tipo de sensor<br>- Protocolo SNMP/MQTT<br>- Enlaces redundantes<br>- Túneles GRE/IPsec |
-| 📺 **Sede Ciudadana y Multimedia** | - Streaming de eventos<br>- Kioskos digitales<br>- WiFi ciudadano<br>- Acceso a portales e información pública          | - DMZ protegida<br>- DNSSEC, HTTPS<br>- Captive Portal<br>- Segmentación red pública/interna        |
+|  **Sede Central**              | - Comunicación interorganismos<br>- DNS, NTP, AAA<br>- Administración interna<br>- Control de políticas de red          | - Core de ruteo (OSPF)<br>- Firewall perimetral<br>- VPN Gateway/IPSec<br>- ACLs y NAT              |
+|  **Sede de Seguridad**         | - Cámaras de videovigilancia<br>- Comunicaciones de emergencia<br>- Salud y Protección Civil                            | - QoS para voz/video<br>- Alta disponibilidad<br>- Red inalámbrica segura<br>- Segmentación IoT     |
+|  **Sede de Infraestructura**   | - Semáforos inteligentes<br>- Sensores ambientales (aire, humedad, ruido)<br>- Movilidad urbana                          | - VLANs por tipo de sensor<br>- Protocolo SNMP/MQTT<br>- Enlaces redundantes<br>- Túneles GRE/IPsec |
+|  **Sede Ciudadana** | - Streaming de eventos<br>- Kioskos digitales<br>- WiFi ciudadano<br>- Acceso a portales e información pública          | - DMZ protegida<br>- DNSSEC, HTTPS<br>- Captive Portal<br>- Segmentación red pública/interna        |
 
 Notas técnicas
 Cada sede tendrá subredes individuales por servicio
