@@ -25,8 +25,9 @@ https://www.youtube.com/watch?v=OQVKp6VLyls&t=127s <--- Tunnelado de ipv6 SOBRE 
 
 https://www.youtube.com/watch?v=hY1sXBt-CQY&list=PLvUOx2WG6R7N5mUWwB-_YLWEkk491XqKx <-- Enlace curso completo del CCNA
 
+https://www.cisco.com/c/en/us/support/docs/ip/ip-version-6/25156-ipv6tunnel.html#:~:text=This%20document%20provides%20a%20sample,the%20IPv4%20backbone%20that%20exists
 
-https://www.youtube.com/watch?v=2SjhoEW0QJ4
+
 
 
 ## COMO CONFIGURAR LOS SERVIDORES DE FTP DE UN SERVIDOR 
