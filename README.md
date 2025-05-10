@@ -27,8 +27,12 @@ Las **ACL extendidas** permiten un filtrado mucho más detallado. Pueden evaluar
 
 Además de las acl para impedir el tráfico desde la red de la sede de los ciudadanos, se ha configurado una VPN con tunnel y Ipsec para cifrar el tráfico entre las siguientes redes:
 -- 192.168.30.0 
+
 -- 192.168.40.0 
+
 -- 192.168.50.0 
+
 -- 192.168.60.0 
+
 
 Para que las comunicaciones entre esas redes(que son solo de uso del ayto.) sean privadas
