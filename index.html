@@ -1,135 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Estructura de Servicios Municipales</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        .imagen {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #007acc;
-            color: white;
-        }
-        caption {
-            font-weight: bold;
-            margin-bottom: 8px;
-            font-size: 1.2em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Red Municipal Inteligente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    p {
+      max-width: 900px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Estructura de Servicios en Sedes Municipales</h1>
+  <h1>Red de Servicios Municipales Inteligentes</h1>
 
-    <div class="imagen">
-        <img src="7f074c00-4bd9-49f7-ade4-c17a578d3a42.png" alt="Estructura de Servicios" width="800">
-    </div>
+  <img src="estructura_servicios.png" alt="Estructura de Servicios">
 
-    <table>
-        <caption>Sede Ciudadana</caption>
-        <thead>
-            <tr>
-                <th>Servicio</th>
-                <th>Elementos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Servicios Gubernamentales</td>
-                <td>Oficinas administrativas<br>Atención a ciudadanos</td>
-            </tr>
-            <tr>
-                <td>Seguridad Pública y Emergencias</td>
-                <td>PCs para notificaciones<br>Coordinación con autoridades</td>
-            </tr>
-            <tr>
-                <td>Transporte y Monitoreo Ambiental</td>
-                <td>Sensores ciudadanos en plazas<br>Datos de entorno urbano</td>
-            </tr>
-            <tr>
-                <td>Servicios Multimedia para el Ciudadano</td>
-                <td>Navegación web pública<br>Información en pantallas digitales</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table>
-        <caption>Sede Central</caption>
-        <thead>
-            <tr>
-                <th>Servicio</th>
-                <th>Elementos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Servicios Gubernamentales</td>
-                <td>Comunicación interinstitucional<br>Base de datos gubernamentales</td>
-            </tr>
-            <tr>
-                <td>Seguridad Pública y Emergencias</td>
-                <td>Enlace con sedes de emergencia<br>Gestión de incidentes</td>
-            </tr>
-            <tr>
-                <td>Transporte y Monitoreo Ambiental</td>
-                <td>Recopilación de datos ambientales<br>Gestión semafórica inteligente</td>
-            </tr>
-            <tr>
-                <td>Servicios Multimedia para el Ciudadano</td>
-                <td>Portal web municipal<br>Streaming de eventos públicos</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table>
-        <caption>Sede Seguridad</caption>
-        <thead>
-            <tr>
-                <th>Servicio</th>
-                <th>Elementos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Servicios Gubernamentales</td>
-                <td>Soporte a centros de control<br>Plataforma 911</td>
-            </tr>
-            <tr>
-                <td>Seguridad Pública y Emergencias</td>
-                <td>Cámaras de vigilancia IP<br>Servidores de video y alarmas</td>
-            </tr>
-            <tr>
-                <td>Transporte y Monitoreo Ambiental</td>
-                <td>Sensores IoT en calles y avenidas<br>Estaciones meteorológicas</td>
-            </tr>
-            <tr>
-                <td>Servicios Multimedia para el Ciudadano</td>
-                <td>Video en vivo de cámaras públicas<br>Señalización en pantallas urbanas</td>
-            </tr>
-        </tbody>
-    </table>
+  <h2>Descripción del Proyecto</h2>
+  <p>
+    Este proyecto implementado en Cisco Packet Tracer representa una red de telecomunicaciones que conecta tres sedes municipales:
+    <strong>Sede Central</strong>, <strong>Sede Seguridad</strong> y <strong>Sede Ciudadana</strong>. Cada una de estas sedes cumple funciones específicas
+    orientadas a servicios esenciales para la ciudadanía, la administración pública y la seguridad.
+  </p>
+  <p>
+    La infraestructura está compuesta por routers, switches, VLANs, servidores y dispositivos finales. Se han implementado túneles
+    GRE sobre IPv4 para interconectar zonas que utilizan IPv6 internamente, garantizando compatibilidad y conectividad segura.
+    Además, se incluyen tecnologías como:
+  </p>
+  <ul style="max-width:900px; margin:0 auto;">
+    <li><strong>VLANs por departamentos:</strong> segmentación de redes para seguridad y eficiencia.</li>
+    <li><strong>Servidor FTP, HTTP, DNS y video streaming:</strong> acceso a servicios multimedia y administrativos.</li>
+    <li><strong>IoT y videovigilancia:</strong> mediante cámaras IP y sensores simulados en la sede de seguridad.</li>
+    <li><strong>Enlaces WAN simulados:</strong> entre las sedes, con políticas de cifrado para la transmisión segura de datos.</li>
+  </ul>
+  <p>
+    Esta red cumple los objetivos clave de una ciudad inteligente: garantizar la comunicación interna del gobierno,
+    proteger a los ciudadanos, monitorizar el entorno urbano y ofrecer servicios digitales de calidad.
+  </p>
 
 </body>
 </html>
