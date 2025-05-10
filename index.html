@@ -35,6 +35,7 @@
       background-color: #1a1a1a;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 255, 231, 0.05);
+      margin-bottom: 30px;
     }
     h2 {
       text-align: center;
@@ -55,6 +56,15 @@
     li::marker {
       color: #00ffe7;
     }
+    pre {
+      background-color: #0b0b0b;
+      color: #00ffe7;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      box-shadow: inset 0 0 10px rgba(0, 255, 231, 0.1);
+      font-size: 0.95em;
+    }
   </style>
 </head>
 <body>
@@ -73,8 +83,8 @@
       orientadas a servicios esenciales para la ciudadanía, la administración pública y la seguridad.
     </p>
     <p>
-      La infraestructura está compuesta por routers, switches, VLANs, servidores y dispositivos finales. Se ha implementado túneles,VPN 
-      ,Ipsec y ACls para garantizar la seguridad de la red 
+      La infraestructura está compuesta por routers, switches, VLANs, servidores y dispositivos finales. Se ha implementado túneles, VPN,
+      IPsec y ACLs para garantizar la seguridad de la red.
       Además, se incluyen tecnologías como:
     </p>
     <ul>
@@ -87,6 +97,46 @@
       Esta red cumple los objetivos clave de una ciudad inteligente: garantizar la comunicación interna del gobierno,
       proteger a los ciudadanos, monitorizar el entorno urbano y ofrecer servicios digitales de calidad.
     </p>
+  </section>
+
+  <section>
+    <h2>Demostración del Servicio FTP</h2>
+    <p>
+      Para demostrar el funcionamiento del servicio FTP, desde el Command Prompt del PC se utilizan los comandos <strong>put</strong> y <strong>get</strong> para subir y descargar archivos:
+    </p>
+    <ul>
+      <li><strong>put:</strong> Subir un archivo al servidor.</li>
+      <li><strong>get:</strong> Descargar un archivo del servidor.</li>
+    </ul>
+    <p>Si ambos comandos funcionan correctamente, el servicio FTP está operando según lo esperado.</p>
+
+    <img src="https://github.com/user-attachments/assets/09864639-dd20-4150-b01a-73795a6c9000" alt="Subida de archivo al servidor por FTP">
+
+    <p>En esta imagen se ve cómo se ha añadido un archivo llamado <strong>Texto.txt</strong> al servidor.</p>
+
+    <img src="https://github.com/user-attachments/assets/5dbdd836-0c88-4dac-9b13-64b7bad1e010" alt="Descarga de archivo desde el servidor por FTP">
+
+    <p>En esta imagen se visualiza la correcta descarga del archivo <strong>Texto.txt</strong> desde otro PC.</p>
+  </section>
+
+  <section>
+    <h2>Demostración del Servicio TFTP</h2>
+    <p>
+      Para usar este servicio se emplea el siguiente comando desde un router para transferir su configuración al servidor TFTP:
+    </p>
+
+    <pre>
+Copy running-config tftp:
+Address or name of remote host []? 192.168.1.2
+Destination filename [netizzan-confg]? 
+Writing running-config....!!
+[OK - 718 bytes]
+718 bytes copied in 3.252 secs (220 bytes/sec)
+    </pre>
+
+    <p>Esto demuestra que el servidor ha sido capaz de recibir la configuración del router correctamente.</p>
+
+    <img src="https://github.com/user-attachments/assets/ca253d38-ea88-4290-9f27-56ea3ac18ac8" alt="TFTP desde router al servidor">
   </section>
 
 </body>
