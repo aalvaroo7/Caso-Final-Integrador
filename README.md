@@ -10,7 +10,7 @@ Para ello definiremos que las **Access Control Lists (ACLs)** son reglas aplicad
 
 Más concretamente usarmos las ACL extendidas:
 
-##  ACL Extendida
+ACL Extendida
 
 Las **ACL extendidas** permiten un filtrado mucho más detallado. Pueden evaluar **IP de origen y destino, protocolos, y puertos**, lo que las hace ideales para controlar servicios específicos como HTTP, FTP, SSH, etc.
 
