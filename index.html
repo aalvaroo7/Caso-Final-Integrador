@@ -5,45 +5,89 @@
   <title>Red Municipal Inteligente</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #0f0f0f;
+      color: #eaeaea;
+    }
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+      background: linear-gradient(135deg, #1f1f1f, #0f0f0f);
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #00ffe7;
+      margin-bottom: 10px;
     }
     img {
       display: block;
-      margin: 30px auto;
+      margin: 40px auto 20px;
       max-width: 90%;
+      border: 2px solid #00ffe7;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 231, 0.3);
     }
-    h1, h2 {
-      text-align: center;
-    }
-    p {
+    section {
       max-width: 900px;
-      margin: 20px auto;
-      line-height: 1.6;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.05);
+    }
+    h2 {
+      text-align: center;
+      color: #00ffe7;
+      margin-top: 20px;
+    }
+    p, li {
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+    strong {
+      color: #ffffff;
+    }
+    li::marker {
+      color: #00ffe7;
     }
   </style>
 </head>
 <body>
 
-  <h1>Red de Servicios Municipales Inteligentes</h1>
+  <header>
+    <h1>Red de Servicios Municipales Inteligentes</h1>
+  </header>
 
-  <img src="IMG1.png" alt="Componentes del Proyecto">
+  <img src="componentes_proyecto.png" alt="Componentes del Proyecto">
 
-  <h2>Descripción del Proyecto</h2>
-  <p>
-    Este proyecto implementado en Cisco Packet Tracer representa una red de telecomunicaciones que conecta tres sedes municipales:
-    <strong>Sede Central</strong>, <strong>Sede Seguridad</strong> y <strong>Sede Ciudadana</strong>. Cada una de estas sedes cumple funciones específicas
-    orientadas a servicios esenciales para la ciudadanía, la administración pública y la seguridad.
-  </p>
-  <p>
-    La infraestructura está compuesta por routers, switches, VLANs, servidores y dispositivos finales. Se han implementado túneles
-    GRE sobre IPv4 para interconectar zonas que utilizan IPv6 internamente, garantizando compatibilidad y conectividad segura.
-    Además, se incluyen tecnologías como:
-  </p>
-  <ul style="max-width:900px; margin:0 auto;">
-    <li><strong>VLANs por departamentos:</strong> segmentación de redes para seguridad y eficiencia.</li>
-    <li><strong>Servidor FTP, HTTP, DNS y video streaming:</strong> acceso a servicios multimedia y administrativos.</li>
-    <li><strong>IoT y videovigilancia:</strong> mediante cámaras IP y sensores simulados en la sede de seguridad.</li>
-    <li><strong>Enlaces WAN simulados:</strong> entre las sedes, con políticas de cifrado para la transmisión segura de datos.</li>
+  <section>
+    <h2>Descripción del Proyecto</h2>
+    <p>
+      Este proyecto implementado en Cisco Packet Tracer representa una red de telecomunicaciones que conecta tres sedes municipales:
+      <strong>Sede Central</strong>, <strong>Sede Seguridad</strong> y <strong>Sede Ciudadana</strong>. Cada una de estas sedes cumple funciones específicas
+      orientadas a servicios esenciales para la ciudadanía, la administración pública y la seguridad.
+    </p>
+    <p>
+      La infraestructura está compuesta por routers, switches, VLANs, servidores y dispositivos finales. Se han implementado túneles
+      GRE sobre IPv4 para interconectar zonas que utilizan IPv6 internamente, garantizando compatibilidad y conectividad segura.
+      Además, se incluyen tecnologías como:
+    </p>
+    <ul>
+      <li><strong>VLANs por departamentos:</strong> segmentación de redes para seguridad y eficiencia.</li>
+      <li><strong>Servidor FTP, HTTP, DNS y video streaming:</strong> acceso a servicios multimedia y administrativos.</li>
+      <li><strong>IoT y videovigilancia:</strong> mediante cámaras IP y sensores simulados en la sede de seguridad.</li>
+      <li><strong>Enlaces WAN simulados:</strong> entre las sedes, con políticas de cifrado para la transmisión segura de datos.</li>
+    </ul>
+    <p>
+      Esta red cumple los objetivos clave de una ciudad inteligente: garantizar la comunicación interna del gobierno,
+      proteger a los ciudadanos, monitorizar el entorno urbano y ofrecer servicios digitales de calidad.
+    </p>
+  </section>
+
+</body>
+</html>
