@@ -1,6 +1,6 @@
 # Caso-Final-Integrador
 https://github.com/aalvaroo7/Caso-Final-Integrador.git
-#Demostración del servicio ftp:
+# Demostración del servicio ftp:
 
 Para ello emplearemos en el apartado de comand prompt en el desktop del pc los comandos:
 
