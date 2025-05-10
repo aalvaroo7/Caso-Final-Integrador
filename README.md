@@ -4,9 +4,12 @@ https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
 ## Información sobre el protocolo usado y su predecesor 
 
-# 📋 EIGRP - Características, Ventajas y Desventajas
+#  EIGRP - Características, Ventajas y Desventajas
+## ¿Qué es EIGRP?
 
-## 🔧 Características de EIGRP
+**EIGRP (Enhanced Interior Gateway Routing Protocol)** es un protocolo de enrutamiento avanzado desarrollado por Cisco, diseñado para operar dentro de un **sistema autónomo** (IGP, *Interior Gateway Protocol*). Combina lo mejor de los protocolos **de vector distancia** y **de estado de enlace**, ofreciendo rápida convergencia, eficiencia en el uso de recursos y escalabilidad.
+
+##  Características de EIGRP
 
 | Característica                            | Descripción                                                                 |
 |-------------------------------------------|-----------------------------------------------------------------------------|
@@ -23,7 +26,7 @@ https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
 ---
 
-## ✅ Ventajas de EIGRP
+##  Ventajas de EIGRP
 
 | Ventaja                                | Descripción                                                                 |
 |----------------------------------------|-----------------------------------------------------------------------------|
@@ -36,7 +39,7 @@ https://github.com/aalvaroo7/Caso-Final-Integrador.git
 
 ---
 
-## ⚠️ Desventajas de EIGRP
+##  Desventajas de EIGRP
 
 | Desventaja                             | Descripción                                                                 |
 |----------------------------------------|-----------------------------------------------------------------------------|
