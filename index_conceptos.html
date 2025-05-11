@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Red Municipal Inteligente</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #0f0f0f;
+      color: #eaeaea;
+    }
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+      background: linear-gradient(135deg, #1f1f1f, #0f0f0f);
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #00ffe7;
+      margin-bottom: 10px;
+    }
+    img {
+      display: block;
+      margin: 40px auto 20px;
+      max-width: 90%;
+      border: 2px solid #00ffe7;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 231, 0.3);
+    }
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.05);
+      margin-bottom: 30px;
+    }
+    h2 {
+      text-align: center;
+      color: #00ffe7;
+      margin-top: 20px;
+    }
+    p, li {
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+    strong {
+      color: #ffffff;
+    }
+    li::marker {
+      color: #00ffe7;
+    }
+    pre {
+      background-color: #0b0b0b;
+      color: #00ffe7;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      box-shadow: inset 0 0 10px rgba(0, 255, 231, 0.1);
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Red de Servicios Municipales Inteligentes</h1>
+  </header>
+
+  <img src="IMG1.png" alt="Componentes del Proyecto">
+
+  <section>
+    <h2>Descripción del Proyecto</h2>
+    <p>
+      Este proyecto implementado en Cisco Packet Tracer representa una red de telecomunicaciones que conecta tres sedes municipales:
+      <strong>Sede Central</strong>, <strong>Sede Seguridad</strong> y <strong>Sede Ciudadana</strong>. Cada una de estas sedes cumple funciones específicas
+      orientadas a servicios esenciales para la ciudadanía, la administración pública y la seguridad.
+    </p>
+    <p>
+      La infraestructura está compuesta por routers, switches, VLANs, servidores y dispositivos finales. Se ha implementado túneles, VPN,
+      IPsec y ACLs para garantizar la seguridad de la red.
+      Además, se incluyen tecnologías como:
+    </p>
+    <ul>
+      <li><strong>VLANs por departamentos:</strong> segmentación de redes para seguridad y eficiencia.</li>
+      <li><strong>Servidor FTP, HTTP, DNS y video streaming:</strong> acceso a servicios multimedia y administrativos.</li>
+      <li><strong>IoT y videovigilancia:</strong> mediante cámaras IP y sensores simulados en la sede de seguridad.</li>
+      <li><strong>Enlaces WAN simulados:</strong> entre las sedes, con políticas de cifrado para la transmisión segura de datos.</li>
+    </ul>
+    <p>
+      Esta red cumple los objetivos clave de una ciudad inteligente: garantizar la comunicación interna del gobierno,
+      proteger a los ciudadanos, monitorizar el entorno urbano y ofrecer servicios digitales de calidad.
+    </p>
+  </section>
+
+  <section>
+    <h2>Demostración del Servicio FTP</h2>
+    <p>
+      Para demostrar el funcionamiento del servicio FTP, desde el Command Prompt del PC se utilizan los comandos <strong>put</strong> y <strong>get</strong> para subir y descargar archivos:
+    </p>
+    <ul>
+      <li><strong>put:</strong> Subir un archivo al servidor.</li>
+      <li><strong>get:</strong> Descargar un archivo del servidor.</li>
+    </ul>
+    <p>Si ambos comandos funcionan correctamente, el servicio FTP está operando según lo esperado.</p>
+
+    <img src="FTP.png" alt="Subida de archivo al servidor por FTP">
+
+    <p>En esta imagen se ve cómo se ha añadido un archivo llamado <strong>Texto.txt</strong> al servidor.</p>
+
+    <img src="FTP2.png" alt="Descarga de archivo desde el servidor por FTP">
+
+    <p>En esta imagen se visualiza la correcta descarga del archivo <strong>Texto.txt</strong> desde otro PC.</p>
+  </section>
+
+  <section>
+    <h2>Demostración del Servicio TFTP</h2>
+    <p>
+      Para usar este servicio se emplea el siguiente comando desde un router para transferir su configuración al servidor TFTP:
+    </p>
+
+    <pre>
+Copy running-config tftp:
+Address or name of remote host []? 192.168.1.2
+Destination filename [netizzan-confg]? 
+Writing running-config....!!
+[OK - 718 bytes]
+718 bytes copied in 3.252 secs (220 bytes/sec)
+    </pre>
+
+    <p>Esto demuestra que el servidor ha sido capaz de recibir la configuración del router correctamente.</p>
+
+    <img src="TFTP.png" alt="TFTP desde router al servidor">
+  </section>
+
+
+  <section>
+    <h2>Conceptos y Configuraciones Aplicadas a Este Proyecto</h2>
+
+    <h4>Enrutamiento Dinámico</h4>
+    <p><strong>EIGRP - Características, Ventajas y Desventajas</strong></p>
+    <p><strong>¿Qué es EIGRP?</strong><br>
+    EIGRP (Enhanced Interior Gateway Routing Protocol) es un protocolo de enrutamiento avanzado desarrollado por Cisco, diseñado para operar dentro de un sistema autónomo (IGP). Combina lo mejor de los protocolos de vector distancia y de estado de enlace, ofreciendo rápida convergencia, eficiencia en el uso de recursos y escalabilidad.</p>
+
+    <p><strong>Características de EIGRP</strong></p>
+    <pre>
+Característica            Descripción
+Tipo de protocolo         Híbrido (Vector distancia + Estado de enlace)
+Algoritmo de enrutamiento DUAL (Diffusing Update Algorithm)
+Métrica                   Basada en ancho de banda, retardo, carga y confiabilidad
+Transporte                RTP (Reliable Transport Protocol)
+Soporte de protocolos     IPv4 e IPv6
+Soporte de VLSM y CIDR    ✅ Sí
+Balanceo de carga         ✅ Sí (igual y desigual)
+Rutas de respaldo         ✅ Feasible successors
+Tipo de actualizaciones   Parciales y triggered (no periódicas)
+Detección de bucles       ✅ Muy eficiente (gracias a DUAL)
+    </pre>
+
+    <p><strong>Ventajas de EIGRP</strong></p>
+    <pre>
+Ventaja                       Descripción
+Convergencia rápida           DUAL permite encontrar nuevas rutas rápidamente
+Uso eficiente del ancho de banda Solo envía actualizaciones cuando hay cambios
+Alta escalabilidad            Ideal para redes grandes
+Soporte de múltiples protocolos Compatible con IPv4, IPv6 y más
+Balanceo de carga desigual    Permite usar rutas con diferente métrica
+Rutas de respaldo inmediatas  No es necesario recalcular todo cuando una ruta falla
+    </pre>
+
+    <p><strong>Desventajas de EIGRP</strong></p>
+    <pre>
+Desventaja                    Descripción
+Propietario de Cisco          No todos los fabricantes lo soportan
+Menos estandarizado que OSPF  Puede generar problemas en entornos mixtos
+Complejidad relativa          Más complejo que RIP en redes pequeñas
+    </pre>
+
+    <p><strong>Comparación entre IGRP y EIGRP</strong></p>
+    <pre>
+Característica               IGRP                     EIGRP
+Desarrollado por            Cisco                    Cisco
+Tipo de protocolo           Vector distancia         Híbrido
+Algoritmo de enrutamiento   Vector distancia clásico DUAL
+Métrica utilizada           BW, delay, carga, conf.  Igual
+Convergencia                Lenta                    Rápida
+Soporta VLSM/CIDR           ❌ No                    ✅ Sí
+Soporta IPv6                ❌ No                    ✅ Sí
+Balanceo carga desigual     ❌ No                    ✅ Sí
+Rutas de respaldo           ❌ No                    ✅ Sí
+Transporte                  Ninguno                 RTP
+Manejo de bucles            Deficiente              Excelente
+Estado actual               Obsoleto                En uso
+    </pre>
+
+    <p><strong>Configuración básica de EIGRP</strong></p>
+    <pre>
+Router5:
+interface g0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
+interface g0/1
+ ip address 192.168.100.1 255.255.255.252
+ no shutdown
+router eigrp 1
+ network 192.168.10.0
+ network 192.168.100.0
+ no auto-summary
+
+Router6:
+interface g0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.1 255.255.255.0
+ no shutdown
+interface g0/1
+ ip address 192.168.100.2 255.255.255.252
+ no shutdown
+router eigrp 1
+ network 192.168.20.0
+ network 192.168.100.0
+ no auto-summary
+
+Switches:
+interface range fa0/1 - 24
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+interface fa0/x
+ switchport mode trunk
+
+PCs:
+PC2/PC3: IP 192.168.10.X | Gateway 192.168.10.1
+PC4/PC5: IP 192.168.20.X | Gateway 192.168.20.1
+    </pre>
+    <p>Verificación con <code>ping</code>, <code>show ip route</code> y <code>show ip protocols</code>.</p>
+
+    <h4>Seguridad de la Red</h4>
+    <p><strong>IPv6 y Dual Stack</strong></p>
+    <p>Para los servicios multimedia se ha aplicado IPv6 mediante un módulo adicional y configuración dual stack, permitiendo coexistencia de IPv4 e IPv6.</p>
+
+    <p><strong>Segmentación y ACLs</strong></p>
+    <p>Se ha restringido el acceso desde la sede ciudadana a los equipos encargados de las cámaras y dispositivos IoT mediante ACLs extendidas.</p>
+
+    <pre>
+ACL Extendida:
+Nivel de filtrado: IP origen/destino, protocolos y puertos
+Protocolos: IP, TCP, UDP, ICMP
+Rango: 100–199 / 2000–2699
+Ubicación recomendada: cerca del origen
+Uso: Controlar acceso a servicios como HTTP, FTP, SSH
+    </pre>
+
+    <p><strong>VPN y Túneles IPsec</strong></p>
+    <p>Para proteger el tráfico entre las redes internas del ayuntamiento se han creado túneles IPsec entre:</p>
+    <ul>
+      <li>192.168.30.0</li>
+      <li>192.168.40.0</li>
+      <li>192.168.50.0</li>
+      <li>192.168.60.0</li>
+    </ul>
+    <p>Esto garantiza comunicaciones privadas y seguras entre sedes.</p>
+  </section>
+
+</body>
+</html>
