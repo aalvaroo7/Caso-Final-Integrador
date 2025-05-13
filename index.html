@@ -73,7 +73,71 @@
     <h1>Red de Servicios Municipales Inteligentes</h1>
   </header>
 
-  <img src="IMG1.png" alt="Componentes del Proyecto">
+  
+<section>
+  <h2>Topología Usada</h2>
+  <img src="red.png" alt="Topología de la red">
+  <h2>Tabla Detallada de la Topología</h2>
+  <table style="width:100%; border-collapse: collapse; color:#eaeaea;" border="1">
+    <thead style="background-color:#00ffe7; color:#0f0f0f;">
+      <tr>
+        <th>Router / Sala</th>
+        <th>Subredes y VLANs</th>
+        <th>Dispositivos Conectados</th>
+        <th>Uso de la Red</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🟨 Router 2 – SALA CILINDRADA</td>
+        <td>- 192.168.10.0/24 → VLAN 10<br>- 192.168.20.0/24 → VLAN 20</td>
+        <td>- Laptop1 a Laptop10<br>- Switch 2960-24TT y otros switches</td>
+        <td>- Red de usuarios generales<br>- VLAN 10: Subgrupo de usuarios<br>- VLAN 20: Administrativos o invitados</td>
+      </tr>
+      <tr>
+        <td>🟦 Router Central – SALA DE DATOS</td>
+        <td>- 192.168.30.0/24 → VLAN 30<br>- 192.168.40.0/24 → VLAN 40</td>
+        <td>- Servidor (FTP, HTTP, WEB)<br>- Switches 2960-24TT<br>- Varias laptops y PCs</td>
+        <td>- Servicios de red (FTP, Web, etc.)<br>- VLAN 30: Administración<br>- VLAN 40: Usuarios</td>
+      </tr>
+      <tr>
+        <td>🟪 Router 1 – SALA DE CONTROL</td>
+        <td>- 192.168.50.0/24 → VLAN 50<br>- 192.168.60.0/24 → VLAN 60</td>
+        <td>- Cámaras IP, sensores, sirenas, lámparas<br>- Dispositivos IoT: sensor temp/humo, fire monitor, webcam, LCD, Arduino</td>
+        <td>- Automatización y videovigilancia<br>- VLAN 50: Sensores y cámaras<br>- VLAN 60: Alarmas y actuadores</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🔴 Enlaces Entre Routers</h2>
+  <table style="width:100%; border-collapse: collapse; color:#eaeaea;" border="1">
+    <thead style="background-color:#00ffe7; color:#0f0f0f;">
+      <tr>
+        <th>Conexión</th>
+        <th>Tipo</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Router 2 ↔ Router Central</td>
+        <td>Enlace WAN (Rojo)</td>
+        <td>Comunican SALA CILINDRADA con SALA DE DATOS</td>
+      </tr>
+      <tr>
+        <td>Router 1 ↔ Router Central</td>
+        <td>Enlace WAN (Rojo)</td>
+        <td>Comunican SALA DE CONTROL con SALA DE DATOS</td>
+      </tr>
+      <tr>
+        <td>Router 2 ↔ Router 1</td>
+        <td>Enlace indirecto</td>
+        <td>A través del router central, posible túnel IPv6 sobre IPv4</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<img src="IMG1.png" alt="Componentes del Proyecto">
 
   <section>
     <h2>Descripción del Proyecto</h2>
@@ -299,5 +363,22 @@ Uso: Controlar acceso a servicios como HTTP, FTP, SSH
 
    
   </section>
+
+<section>
+  <h2>Demostración del Empleo de ACLs y VPN</h2>
+  <p>
+    En esta sección se presenta una comprobación funcional del sistema de control de acceso y túneles seguros configurados
+    en la red. Como los usuarios de la sede ciudadana no tienen autorización para acceder a los datos del ayuntamiento,
+    se ha configurado una ACL extendida que impide su comunicación directa. Para garantizar acceso seguro, se ha creado
+    una VPN con cifrado IPsec y se ha implementado un <strong>crypto map</strong> que asocia los parámetros de seguridad
+    a la interfaz correspondiente.
+  </p>
+  <p>
+    Las siguientes imágenes muestran la prueba de conectividad mediante comandos <code>ping</code> desde dos equipos
+    distintos. Uno de ellos logra acceder gracias a la VPN y políticas permitidas; el otro es rechazado por las ACLs.
+  </p>
+  <img src="pings.png" alt="Demostración de ACL y VPN con pings">
+</section>
+
 </body>
 </html>
