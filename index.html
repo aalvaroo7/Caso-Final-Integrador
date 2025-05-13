@@ -89,19 +89,19 @@
     </thead>
     <tbody>
       <tr>
-        <td>🟨 Router 2 – SALA CILINDRADA</td>
+        <td>Router 2 – SEDE CIUDADANA</td>
         <td>- 192.168.10.0/24 → VLAN 10<br>- 192.168.20.0/24 → VLAN 20</td>
-        <td>- Laptop1 a Laptop10<br>- Switch 2960-24TT y otros switches</td>
-        <td>- Red de usuarios generales<br>- VLAN 10: Subgrupo de usuarios<br>- VLAN 20: Administrativos o invitados</td>
+        <td>- Laptop1 a Laptop10<br>- Switch 2960-24TT y APs</td>
+        <td>- Red de usuarios generales<br>- VLAN 10: Subgrupo de usuarios<br>- VLAN 20: Subgrupo de usuarios</td>
       </tr>
       <tr>
-        <td>🟦 Router Central – SALA DE DATOS</td>
+        <td>Router Central – SEDE CENTRAL DEL AYTO.</td>
         <td>- 192.168.30.0/24 → VLAN 30<br>- 192.168.40.0/24 → VLAN 40</td>
         <td>- Servidor (FTP, HTTP, WEB)<br>- Switches 2960-24TT<br>- Varias laptops y PCs</td>
-        <td>- Servicios de red (FTP, Web, etc.)<br>- VLAN 30: Administración<br>- VLAN 40: Usuarios</td>
+        <td>- Servicios de red (FTP, Web, etc.)<br>- VLAN 30: Portal web<br>- VLAN 40: Usuarios del ayto.</td>
       </tr>
       <tr>
-        <td>🟪 Router 1 – SALA DE CONTROL</td>
+        <td>Router 1 – SEDE IOT</td>
         <td>- 192.168.50.0/24 → VLAN 50<br>- 192.168.60.0/24 → VLAN 60</td>
         <td>- Cámaras IP, sensores, sirenas, lámparas<br>- Dispositivos IoT: sensor temp/humo, fire monitor, webcam, LCD, Arduino</td>
         <td>- Automatización y videovigilancia<br>- VLAN 50: Sensores y cámaras<br>- VLAN 60: Alarmas y actuadores</td>
@@ -109,7 +109,7 @@
     </tbody>
   </table>
 
-  <h2>🔴 Enlaces Entre Routers</h2>
+  <h2>Enlaces Entre Routers</h2>
   <table style="width:100%; border-collapse: collapse; color:#eaeaea;" border="1">
     <thead style="background-color:#00ffe7; color:#0f0f0f;">
       <tr>
@@ -122,17 +122,12 @@
       <tr>
         <td>Router 2 ↔ Router Central</td>
         <td>Enlace WAN (Rojo)</td>
-        <td>Comunican SALA CILINDRADA con SALA DE DATOS</td>
+        <td>Comunican SEDE CIUDADANA con SEDE CENTRAL DEL AYTO.</td>
       </tr>
       <tr>
         <td>Router 1 ↔ Router Central</td>
         <td>Enlace WAN (Rojo)</td>
-        <td>Comunican SALA DE CONTROL con SALA DE DATOS</td>
-      </tr>
-      <tr>
-        <td>Router 2 ↔ Router 1</td>
-        <td>Enlace indirecto</td>
-        <td>A través del router central, posible túnel IPv6 sobre IPv4</td>
+        <td>Comunican SEDE CENTRAL AYTO. con SEDE IOT</td>
       </tr>
     </tbody>
   </table>
@@ -153,7 +148,7 @@
     </p>
     <ul>
       <li><strong>VLANs por departamentos:</strong> segmentación de redes para seguridad y eficiencia.</li>
-      <li><strong>Servidor FTP, HTTP, DNS y video streaming:</strong> acceso a servicios multimedia y administrativos.</li>
+      <li><strong>Servidor FTP, HTTP</strong> acceso a servicios multimedia y administrativos.</li>
       <li><strong>IoT y videovigilancia:</strong> mediante cámaras IP y sensores simulados en la sede de seguridad.</li>
       <li><strong>Enlaces WAN simulados:</strong> entre las sedes, con políticas de cifrado para la transmisión segura de datos.</li>
     </ul>
